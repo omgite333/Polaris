@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
+import DemoPage from "./demo/page";
 
 export default function Home() {
    const projects = useQuery(api.projects.get);
@@ -16,6 +17,8 @@ export default function Home() {
        <div key={_id}>
         {name}
         </div>)}
+
+        <DemoPage />
     </div>
   );
 }
