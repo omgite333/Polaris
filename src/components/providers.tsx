@@ -26,7 +26,7 @@ export default function ConvexClientProvider({ children }: { children: ReactNode
                     disableTransitionOnChange >
 
        <Authenticated>
-        <UserButton />
+        
          {children}
         </Authenticated>  
 
